@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0ebe3;
+}
+
+.container {
+  width: 1000px;
+  height: 500px;
+  background-color: #e5e1da;
+  display: grid;
+  grid-template-columns: 75px 1fr 2fr;
+  column-gap: 14px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 16px 24px;
+}
+
+.views {
+  display: flex;
+  flex-direction: column;
+}
+
+.view-option {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  transform: border 0.15s;
+  cursor: pointer;
+}
+
+.view-option:hover {
+  border: 1px solid blue;
+}
+
+.views img {
+  width: 50px;
+}
+
+.large-view img {
+  width: 90%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.large-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  color: red;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.item-name {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.item-description {
+  font-size: 1em;
+  color: #959595;
+  margin-bottom: 15px;
+}
+
+.sale-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.percent-off {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.old-price {
+  font-style: italic;
+  font-size: 14px;
+  color: #959595;
+  margin-bottom: 30px;
+}
+
+.size .title {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.sizes ul {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.sizes ul li {
+  font-size: 1.5em;
+  font-weight: 500;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+li .active {
+  background-color: black;
+  color: white;
+}
+
+li:hover {
+  background-color: #d8d4ce;
+}
+
+button {
+  margin-top: auto;
+  font-size: 20px;
+  width: 300px;
+  transform: translateX(50%);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
