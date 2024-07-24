@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #feece2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 30%;
+}
+
+img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bg-container {
+  background-color: #ffbe98;
+  width: 100%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
+
+main {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+main h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.user-tag {
+  font-size: 0.9em;
+  color: #909090;
+  margin-bottom: 30px;
+}
+
+.socials {
+  font-size: 1.5em;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.socials i {
+  color: #ef9c66;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  opacity: 0.6;
+}
+
+.content {
+  font-size: 1em;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+button {
+  width: 130px;
+  font-size: 1em;
+  border-radius: 30px;
+  padding: 4px 0;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+.follow {
+  background-color: #ffbe98;
+  border: none;
+  color: white;
+}
+
+.message {
+  color: #ef9c66;
+  border: 1px solid #ef9c66;
+}
