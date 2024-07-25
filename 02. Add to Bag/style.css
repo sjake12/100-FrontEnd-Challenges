@@ -49,6 +49,10 @@ body {
   width: 50px;
 }
 
+.active-view {
+  background-color: rgba(95, 95, 95, 0.1);
+}
+
 .large-view img {
   width: 90%;
   height: 100%;
@@ -132,7 +136,7 @@ body {
   margin-right: 20px;
 }
 
-li .active {
+.active-size {
   background-color: black;
   color: white;
 }
