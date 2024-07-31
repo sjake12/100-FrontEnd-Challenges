@@ -2,7 +2,7 @@
 :root {
   --yellow: #ff9800;
   --black: #000;
-  --gray: #9f9f9f;
+  --gray: #808080;
 }
 
 * {
@@ -160,20 +160,40 @@ main {
   color: var(--black);
 }
 
-@media (max-height: 900px) {
+@media (max-height: 900px) and (max-width: 1600px) {
   main {
+    width: 100%;
+    height: max-content;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
   }
 
   .left {
     width: 100%;
+    height: 100vh;
+  }
+
+  .title {
+    position: relative;
+    width: 80%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .right {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em 4em;
+  }
+
+  .instructions li {
+    line-height: 1.5;
   }
 }
