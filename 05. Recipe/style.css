@@ -66,8 +66,16 @@ main {
 
 .title .stars {
   margin-right: 20px;
-  color: var(--yellow);
+  color: var(--gray);
   cursor: pointer;
+}
+
+.stars i {
+  transition: 0.15s;
+}
+
+.stars i:hover {
+  opacity: 0.8;
 }
 
 .title .top {
@@ -196,4 +204,10 @@ main {
   .instructions li {
     line-height: 1.5;
   }
+}
+
+/* JavaScript */
+
+.active {
+  color: var(--yellow);
 }
