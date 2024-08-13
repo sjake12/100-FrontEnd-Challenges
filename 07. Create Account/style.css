@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("bg-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  padding: 1.2rem;
+}
+
+form h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #9f9f9f;
+  margin-bottom: 1rem;
+}
+
+form h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+form input {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #f3f2f3;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  /* outline-color: rgb(75, 75, 245); */
+}
+
+form p {
+  font-size: 1rem;
+  color: rgb(95, 95, 95);
+  margin-bottom: 2rem;
+}
+
+form strong {
+  color: rgb(75, 75, 245);
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+form strong a {
+  text-decoration: none;
+  transition: opacity 0.15 ease;
+}
+
+form strong a:hover {
+  opacity: 0.6;
+}
+
+form button {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+  background: rgb(75, 75, 245);
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  margin-right: 1rem;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+.fullname {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
+
+.input {
+  background: #f3f2f3;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  padding-right: 10px;
+  padding-top: 1rem;
+  border: 2px solid transparent;
+  transition: border-color 0.15s ease;
+  position: relative;
+}
+
+.input:focus-within {
+  border-color: rgb(75, 75, 245);
+}
+
+.email,
+.password {
+  margin-bottom: 1rem;
+}
+
+.email input,
+.password input {
+  flex: 1;
+}
+
+i {
+  color: #959595;
+}
+
+form label {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  display: inline-block;
+  pointer-events: none;
+  font-weight: bolder;
+  transition: color 0.15s ease;
+}
+
+.input:focus-within label {
+  /* transform: translate(-10px, -20px); */
+  color: rgb(75, 75, 245);
+}
