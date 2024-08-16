@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --bg-color: #e6e7f1;
+  --main-color: #f2f2f2;
+  --primary-color: #26334a;
+  --font-color: #03010a;
+  --highlight: #0038ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--font-color);
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color);
+  margin-bottom: 40px;
+}
+
+.btn-white {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  color: var(--font-color);
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-dark {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary-color);
+  border: none;
+  padding: 16px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+}
+
+button div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button span img {
+  width: 20px;
+  height: 20px;
+}
+
+.signup-1,
+.singup-2 {
+  background: var(--main-color);
+  padding: 40px 24px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-1 .btn-white {
+  margin-bottom: 24px;
+}
+
+.signup-1 .btn-dark {
+  margin-bottom: 20px;
+}
+
+.login-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.login-link span a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.singup-2 > div {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  display: flex;
+
+  z-index: 1;
+}
+
+.singup-2 > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.singup-2 > div:focus-within {
+  border: 1px solid var(--highlight);
+}
+
+.singup-2 input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.singup-2 label {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  display: inline-block;
+  z-index: 2;
+}
+
+.singup-2 > div:focus-within label {
+  transform: translate(-15px, -30px) scale(0.8);
+  color: var(--highlight);
+  z-index: 3;
+  background-color: var(--main-color);
+}
+
+.singup-2 .btn-dark {
+  margin-bottom: 20px;
+}
+
+.singup-2 .login-link {
+  margin-bottom: 40px;
+}
+
+.singup-2 .line {
+  margin-bottom: 40px;
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.16);
+  border: none;
+}
+
+.singup-2 .line p {
+  position: absolute;
+  display: inline-block;
+  top: -2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.password div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password div {
+  width: 20px;
+  height: 20px;
+  background: url(img/prime_eye.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
