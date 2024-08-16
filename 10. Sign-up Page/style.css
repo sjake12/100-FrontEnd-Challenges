@@ -113,8 +113,6 @@ button span img {
   border: 1px solid rgba(0, 0, 0, 0.24);
   border-radius: 5px;
   display: flex;
-
-  z-index: 1;
 }
 
 .singup-2 > div:not(:last-child) {
@@ -132,6 +130,7 @@ button span img {
   outline: none;
   border: none;
   background: transparent;
+  position: relative;
 }
 
 .singup-2 label {
@@ -141,13 +140,13 @@ button span img {
   color: rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
   display: inline-block;
-  z-index: 2;
+  pointer-events: none;
 }
 
-.singup-2 > div:focus-within label {
+.singup-2 > div:focus-within label,
+.singup-2 > div:has(:valid) label {
   transform: translate(-15px, -30px) scale(0.8);
   color: var(--highlight);
-  z-index: 3;
   background-color: var(--main-color);
 }
 
@@ -177,16 +176,11 @@ button span img {
 }
 
 .password div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.password div {
   width: 20px;
   height: 20px;
   background: url(img/prime_eye.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
