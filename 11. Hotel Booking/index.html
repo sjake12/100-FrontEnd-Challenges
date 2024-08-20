@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <label for="check-in">Check In</label>
+        <input type="date" id="check-in" />
+        <label for="check-out">Check Out</label>
+        <input type="date" id="check-out" />
+        <div class="person">
+          <div class="person__adults">
+            <label for="adults">Adults</label>
+            <input type="number" id="adults" />
+          </div>
+          <div class="person__children">
+            <label for="children">Children</label>
+            <input type="number" id="children" />
+          </div>
+        </div>
+        <input type="submit" class="btn" value="Book a room" />
+      </form>
+      <div class="gallery">
+        <ul>
+          <li>
+            <img src="img/Dusit-Thani-One-Bedroom-Corner-Suite.jpg" />
+            <div class="location-container">
+              <h2 class="hotel-name">Dusit Thani Residence Davao</h2>
+              <h3 class="location">Bo. Pampanga, Davao City</h3>
+            </div>
+          </li>
+          <li>
+            <img src="img/pool.jpg" />
+          </li>
+          <li><img src="img/building.jpg" /></li>
+          <li><img src="img/lobby.jpg" /></li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
