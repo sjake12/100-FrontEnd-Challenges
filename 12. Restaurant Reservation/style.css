@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --yellow: hsl(36, 100%, 50%);
+  --light-yellow: hsl(36, 100%, 80%);
+  --bg-color: #f7eed3;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-color);
+}
+
+.container {
+  width: 425px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Carousel START */
+.image-carousel {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  box-shadow: inset 0 -50px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-carousel::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 -50px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: hsl(0, 0%, 100%);
+  margin-right: 10px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+/* Carousel END */
+/* Restaurant Info START */
+.info {
+  display: flex;
+  padding: 20px;
+}
+
+.restaurant {
+  flex: 1;
+}
+
+.restaurant__name {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.restaurant__address {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.restaurant__reviews,
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  list-style: none;
+  margin-right: 5px;
+  font-size: 0.9rem;
+  color: var(--light-yellow);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.star:hover {
+  opacity: 0.7;
+}
+
+.star.active {
+  color: var(--yellow);
+}
+
+.reviews {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9f9f9f;
+  margin-left: 5px;
+}
+
+.heart {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.heart {
+  font-size: 2rem;
+  animation: like 0.5s linear ease;
+}
+
+.heart .fa-solid {
+  font-size: 2rem;
+  color: red;
+  animation: like 0.5s linear ease;
+}
+
+@keyframes like {
+  0% {
+    transform: scale(1) opacity(1);
+  }
+  50% {
+    transform: scale(1.2) opacity(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Restaurant Info END */
+/* Restaurant Details START */
+.details {
+  padding: 20px;
+  line-height: 20px;
+}
+/* Restaurant Details END */
+/* Button START */
+.btn {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: hsl(0, 0%, 10%);
+}
+/* Button END */

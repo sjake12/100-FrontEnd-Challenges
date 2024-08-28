@@ -1,23 +1,8 @@
-class Counter {
-  constructor(num) {
-    this.num = Number(num);
-  }
+const checkInDate = document.getElementById("check-in");
+const checkOutDate = document.getElementById("check-out");
 
-  increment() {
-    this.num++;
-  }
+const date = new Date();
+var moment = require("moment");
+const today = moment().format("D MMMM, YYYY");
 
-  getCount() {
-    return this.num;
-  }
-}
-
-const count = new Counter(5);
-
-let i = 0;
-
-while (i < 3) {
-  count.increment();
-  console.log(count.getCount());
-  i++;
-}
+checkInDate.placeholder = today;
