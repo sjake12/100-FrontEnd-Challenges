@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header">Boards</h1>
+    <main class="board">
+      <div class="task">
+        <h2 class="task-header">To do <i class="fa-solid fa-plus"></i></h2>
+
+        <div class="task-card" draggable="true">
+          <div class="card-header">
+            <div class="status high">HIGH</div>
+            <p class="date-posted">2/15/24</p>
+          </div>
+          <img src="img/card-1.png" class="card-image" />
+          <h3 class="card-title">Update Website Homepage</h3>
+          <p class="card-content">
+            Revise the content and layout of the homepage to highlight new
+            features and improve user engagement.
+          </p>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img src="img/user1.png" />
+            </div>
+            <div class="avatar">
+              <img src="img/user2.png" />
+            </div>
+            <div class="avatar add">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task">
+        <h2 class="task-header">
+          In progress <i class="fa-solid fa-plus"></i>
+        </h2>
+
+        <div class="task-card" draggable="true">
+          <div class="card-header">
+            <div class="status low">LOW</div>
+            <p class="date-posted">2/13/24</p>
+          </div>
+          <img src="" class="card-image" />
+          <h3 class="card-title">Bug Fix - User Registration</h3>
+          <p class="card-content">
+            Investigate and resolve the reported bug in the user registration
+            process where some users are unable to sign up.
+          </p>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img src="img/user3.png" />
+            </div>
+            <div class="avatar add">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-card" draggable="true">
+          <div class="card-header">
+            <div class="status medium">MEDIUM</div>
+            <p class="date-posted">2/08/24</p>
+          </div>
+          <img src="img/card-2.png" class="card-image" />
+          <h3 class="card-title">Social Media Campaign</h3>
+          <p class="card-content">
+            Plan and execute a social media campaign for the upcoming product
+            launch in February, including creating posts and scheduling updates.
+          </p>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img src="img/user4.png" />
+            </div>
+            <div class="avatar">
+              <img src="img/user5.png" />
+            </div>
+            <div class="avatar add">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task">
+        <h2 class="task-header">
+          Under Review <i class="fa-solid fa-plus"></i>
+        </h2>
+
+        <div class="task-card" draggable="true">
+          <div class="card-header">
+            <div class="status high">HIGH</div>
+            <p class="date-posted">2/11/24</p>
+          </div>
+          <img src="" class="card-image" />
+          <h3 class="card-title">Mobile App Feature - Push Notifications</h3>
+          <p class="card-content">
+            Implement push notification feature for hte mobile app to enhance
+            user engagement. Ensure compatibility with both iOS and Android
+            platforms.
+          </p>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img src="img/user3.png" />
+            </div>
+
+            <div class="avatar add">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task">
+        <h2 class="task-header">Done <i class="fa-solid fa-plus"></i></h2>
+
+        <div class="task-card" draggable="true">
+          <div class="card-header">
+            <div class="status low">LOW</div>
+            <p class="date-posted">2/09/24</p>
+          </div>
+          <img src="" class="card-image" />
+          <h3 class="card-title">Content Creation - Blog Post</h3>
+          <p class="card-content">
+            Write and publish a blog post about industry trends and their impact
+            on our products/services. Include relevant visuals and SEO
+            optimization.
+          </p>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img src="img/user4.png" />
+            </div>
+            <div class="avatar add">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-card" draggable="true">
+          <div class="card-header">
+            <div class="status medium">MEDIUM</div>
+            <p class="date-posted">2/07/24</p>
+          </div>
+          <img src="img/card-3.png" class="card-image" />
+          <h3 class="card-title">IT Security Audit</h3>
+          <p class="card-content">
+            Write and publish a blog post about industry trends and their impact
+            on our products/services. Include relevant visuals and SEO
+            optimization.
+          </p>
+          <div class="avatar-group">
+            <div class="avatar">
+              <img src="img/user2.png" />
+            </div>
+            <div class="avatar add">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
